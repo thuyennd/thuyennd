@@ -1,7 +1,7 @@
 getgenv().Config = {
     ["Team"] = "Pirates", -- Marines
     ["FPS Boost"] = true,
-    ["Black Screen"] = false,
+    ["Black Screen"] = true,
     ["Lock Fragment"] = 100000,
     ["Awakening Fruit"] = false,
     ["Hop if Other Players are Nearby"] = false,
@@ -30,11 +30,11 @@ getgenv().Config = {
         ["Snipe Fruit Selected"] = false
     },
     ["Hop"] = {
-        ["Hop Find Mirror"] = false,
-        ["Hop Find Valkyrie Helm"] = false,
+        ["Hop Find Mirror"] = true,
+        ["Hop Find Valkyrie Helm"] = true,
         ["Hop Find Fruit 1m For Auto Third Sea"] = false,
         ["Hop For Get Tushita"] = true,
-        ["Hop Find Full Moon For Get Skull Guitar"] = false,
+        ["Hop Find Full Moon For Get Skull Guitar"] = true,
         ["Hop Find Cake Queen [CDK]"] = true
     },
 }
