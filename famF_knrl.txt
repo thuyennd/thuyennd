@@ -42,9 +42,9 @@ _G.Races_Settings = { -- ตั้งค่าเผ่า
         ["v3"] = true,
         ["Races_Lock"] = {
             ["Races"] = { -- Select Races U want
-                ["Mink"] = false,
-                ["Human"] = false,
-                ["Fishman"] = false
+                ["Mink"] = true,
+                ["Human"] = true,
+                ["Fishman"] = true
             },
             ["RerollsWhenFragments"] = 50000 -- Random Races When Your Fragments is >= Settings
         }
@@ -59,11 +59,11 @@ _G.Settings_Melee = { -- หมัดที่จะทำ
     ['Godhuman'] = true
 }
 _G.FarmMastery_Settings = {
-    ['Melee'] = true,
-    ['Sword'] = true,
-    ['DevilFruits'] = true,
+    ['Melee'] = false,
+    ['Sword'] = false,
+    ['DevilFruits'] = false,
     ['Select_Swords'] = {
-        ["AutoSettings"] = true, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง
+        ["AutoSettings"] = false, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง
         ["ManualSettings"] = { -- ถ้าปรับ AutoSettings เป็น false มันจะฟาร์มดาบที่เลือกตรงนี้ ตัวอย่างข้างล่าง
             "Saber",
             "Buddy Sword"
@@ -99,4 +99,3 @@ getgenv().Key = "MARU-FQRTO-IV0QG-295R-S8FVU-91FK3"
 getgenv().id = "980683390221185135"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
-
