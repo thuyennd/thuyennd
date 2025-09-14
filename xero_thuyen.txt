@@ -1,1 +1,1 @@
-https://cdn.shouko.dev/neyoshiiuem/test-1d.lua
+loadstring(game:HttpGet("https://cdn.shouko.dev/neyoshiiuem/test-1d.lua"))()
