@@ -16,7 +16,7 @@ getgenv().Key = "b5b6e539af72bb4f0d1c6ff8"
                 },
             },
         },
-        ["White Screen"] = false,
+        ["White Screen"] = true,
         ["Lock Fps"] = {
             ["Enabled"] = false,
             ["FPS"] = 20,
@@ -49,7 +49,7 @@ getgenv().Key = "b5b6e539af72bb4f0d1c6ff8"
         ["Select Hop"] = { -- 70% will have it
             ["Hop Server If Have Player Near"] = false, 
             ["Hop Find Rip Indra Get Valkyrie Helm or Get Tushita"] = true, 
-            ["Hop Find Dough King Get Mirror Fractal"] = false,
+            ["Hop Find Dough King Get Mirror Fractal"] = true,
             ["Hop Find Raids Castle [CDK]"] = true,
             ["Hop Find Cake Queen [CDK]"] = true,
             ["Hop Find Soul Reaper [CDK]"] = true,
