@@ -16,7 +16,7 @@ getgenv().Key = "b5b6e539af72bb4f0d1c6ff8"
                 },
             },
         },
-        ["White Screen"] = true,
+        ["White Screen"] = false,
         ["Lock Fps"] = {
             ["Enabled"] = false,
             ["FPS"] = 20,
@@ -77,3 +77,4 @@ getgenv().Key = "b5b6e539af72bb4f0d1c6ff8"
         }
     }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-kaitunBF.lua"))()
+
