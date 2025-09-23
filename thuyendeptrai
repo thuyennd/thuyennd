@@ -2457,7 +2457,7 @@
     
     function AsynclyPullServerDatas(Category) 
         alert('Search for ' .. Category .. ' Servers...')
-        local Url = ('https://api-bf.yummydata.click/data-private?type=') .. urlencode(Category)  
+        local Url = ('https://api-bf.yummydata.click/98dPdVQkKdcX?type=') .. urlencode(Category)  
         local Success, Result = pcall(function() 
             local Raw = request{
                 Url = Url, 
