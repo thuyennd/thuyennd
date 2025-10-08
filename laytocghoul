@@ -1,17 +1,4 @@
 getgenv().Config = {
-	["Account Main Up Gear"] = false,
-	["Random Devil Fruit"] = false,
-	["Start Kaitun"] = true,
-	["Auto Kick When End Full Moon"] = true,
-	["Account Help"] = true,
-	["Auto Store Fruit"] = false,
-	["Spam Join"] = false
-
-
-
-
-
-getgenv().Config = {
 	["Auto Fire Shoot Heart Leviathan"] = false,
 	["Noti Profile"] = false,
 	["Teleport To Fruit"] = false,
@@ -233,6 +220,6 @@ getgenv().Config = {
 	["Auto Accept Quest Fishing"] = false,
 	["Hop Server Find Boss"] = false
 }
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-getgenv().Key = "aa40228f1d98985e665a3452"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/refs/heads/main/BananaCat-KaitunV4"))()
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "aa40228f1d98985e665a3452" 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
