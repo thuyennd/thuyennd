@@ -87,7 +87,7 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['CursedDualKatana'] = false
 }
 _G.SharkAnchor_Settings = {
-    ["Enabled_Farm"] = true,
+    ["Enabled_Farm"] = false,
     ['FarmAfterMoney'] = 2500000
 }
 _G.GunSettings = { -- ปืนที่จะทำ
@@ -99,4 +99,5 @@ getgenv().Key = "MARU-FQRTO-IV0QG-295R-S8FVU-91FK3"
 getgenv().id = "980683390221185135"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+
 
