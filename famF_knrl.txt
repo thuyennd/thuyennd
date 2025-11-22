@@ -1,5 +1,5 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-getgenv().Key = "aa40228f1d98985e665a3452"
+getgenv().Key = "55ba3bc625d5401f941fbe38"
     getgenv().SettingFarm ={
         ["Hide UI"] = false,
         ["Reset Teleport"] = {
@@ -77,3 +77,4 @@ getgenv().Key = "aa40228f1d98985e665a3452"
         }
     }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-kaitunBF.lua"))()
+
