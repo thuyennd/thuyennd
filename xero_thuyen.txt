@@ -29,7 +29,7 @@ _G.Fruits_Settings = { -- ตั้งค่าผล
 _G.Quests_Settings = { -- ตั้งค่าเควสหลักๆ
     ['Rainbow_Haki'] = true,
     ["MusketeerHat"] = true,
-    ["PullLever"] = true,
+    ["PullLever"] = false,
     ['DoughQuests_Mirror'] = {
         ['Enabled'] = true,
         ['UseFruits'] = true
@@ -71,7 +71,7 @@ _G.FarmMastery_Settings = {
     }
 }
 _G.SwordSettings = { -- ดาบที่จะทำ
-    ['Saber'] = true,
+    ['Saber'] = false,
     ["Pole"] = false,
     ['MidnightBlade'] = false,
     ['Shisui'] = false,
@@ -93,10 +93,11 @@ _G.SharkAnchor_Settings = {
 _G.GunSettings = { -- ปืนที่จะทำ
     ['Kabucha'] = false,
     ['SerpentBow'] = false,
-    ['SoulGuitar'] = true
+    ['SoulGuitar'] = false
 }
 getgenv().Key = "MARU-FQRTO-IV0QG-295R-S8FVU-91FK3"
 getgenv().id = "980683390221185135"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+
 
