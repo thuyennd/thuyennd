@@ -22,7 +22,7 @@ getgenv().Configs = {
         ["Hop Elite"] = true, -- For god chalice farming
     },
     ["Farm Mastery"] = {
-        ["Enable"] = true,
+        ["Enable"] = false,
         ["Farm Mastery Weapons"] = {"Sword", "Gun", "Blox Fruit"}, -- Blox Fruit, Gun (left -> right: High -> Low Priority)
         ["Swords To Farm"] = {"Cursed Dual Katana"},
         ["Guns To Farm"] = {"Skull Guitar"},
@@ -43,7 +43,7 @@ getgenv().Configs = {
     ["Fruit to use for auto third sea"] = {}, -- example: {"Shadow-Shadow", "Buddha-Buddha"}
     ["Get Fruits"] = true,
     ["Auto Spawn rip_indra"] = false,
-    ["Auto Spawn Dough King"] = true,
+    ["Auto Spawn Dough King"] = false,
     ["Auto Pull Lever"] = false,
     ["Auto Collect Berry"] = true,
     ["Auto Evo Race"] = false,
