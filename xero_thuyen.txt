@@ -11,15 +11,15 @@ getgenv().Configs = {
         ["When x2 Exp Expired"] = false
     },
     ["Hop"] = {
-        ["Enable"] = true,
-        ["Hop Find Tushita"] = true,
-        ["Hop Find Valkyrie Helm"] = true,
-        ["Hop Find Mirror Fractal"] = true,
-        ["Hop Find Darkbeard"] = true, -- For skull guitar
-        ["Hop Find Soul Reaper"] = true, -- For CDK
+        ["Enable"] = false,
+        ["Hop Find Tushita"] = false,
+        ["Hop Find Valkyrie Helm"] = false,
+        ["Hop Find Mirror Fractal"] = false,
+        ["Hop Find Darkbeard"] = false, -- For skull guitar
+        ["Hop Find Soul Reaper"] = false, -- For CDK
         ["Hop Find Mirage"] = false, -- For pull lever
         ["Find Fruit"] = false, -- Will find 1m+ fruit to unlock swan door to access third sea
-        ["Hop Elite"] = true, -- For god chalice farming
+        ["Hop Elite"] = false, -- For god chalice farming
     },
     ["Farm Mastery"] = {
         ["Enable"] = false,
