@@ -30,7 +30,7 @@ local plr = game.Players.LocalPlayer
 local CommF = game.ReplicatedStorage.Remotes.CommF_
 
 local Config = {
-    TargetRace = "Skypian", -- Human / Fishman / Mink / Skypian
+    TargetRace = "Skypiea", -- Human / Fishman / Mink / Skypiea
     Delay = 1.5
 }
 
