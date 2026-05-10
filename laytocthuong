@@ -1,0 +1,111 @@
+repeat task.wait() until game:IsLoaded()
+
+getgenv().Config = {
+    TEAM = "Pirates" -- Marines
+}
+local TeamConfig = getgenv().Config
+
+repeat task.wait() until game.Players.LocalPlayer
+repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+
+if game:GetService("Players").LocalPlayer.Team == nil then
+    repeat task.wait()
+        for _, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetChildren()) do
+            if string.find(v.Name, "Main") then
+                v.ChooseTeam.Container[TeamConfig.TEAM].Frame.TextButton.Size = UDim2.new(0, 10000, 0, 10000)
+                v.ChooseTeam.Container[TeamConfig.TEAM].Frame.TextButton.Position = UDim2.new(-4, 0, -5, 0)
+                v.ChooseTeam.Container[TeamConfig.TEAM].Frame.TextButton.BackgroundTransparency = 1
+                task.wait(0.5)
+                game:GetService("VirtualInputManager"):SendMouseButtonEvent(0, 0, 0, true, game, 1)
+                task.wait(0.05)
+                game:GetService("VirtualInputManager"):SendMouseButtonEvent(0, 0, 0, false, game, 1)
+                task.wait(0.05)
+            end
+        end
+    until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
+    task.wait(3)
+end
+
+local plr = game.Players.LocalPlayer
+local CommF = game.ReplicatedStorage.Remotes.CommF_
+
+local Config = {
+    TargetRace = "Skypian", -- Human / Fishman / Mink / Skypian
+    Delay = 1.5
+}
+
+local function normalizeText(s)
+    return tostring(s or "")
+        :lower()
+        :gsub("%-", " ")
+        :gsub("v%d+", "")
+        :gsub("%s+", " ")
+        :gsub("^%s+", "")
+        :gsub("%s+$", "")
+end
+
+local function getCurrentRaceNameOnly()
+    local raceName = plr.Data.Race.Value
+    return tostring(raceName)
+end
+
+local function CheckCurrentRaceFull()
+    local raceName = plr.Data.Race.Value
+    local v113 = CommF:InvokeServer("Wenlocktoad", "1")
+    local v111 = CommF:InvokeServer("Alchemist", "1")
+
+    if plr.Character and plr.Character:FindFirstChild("RaceTransformed") then
+        return raceName .. " V4"
+    end
+    if v113 == -2 then
+        return raceName .. " V3"
+    end
+    if v111 == -2 then
+        return raceName .. " V2"
+    end
+    return raceName .. " V1"
+end
+
+local function isTargetRace()
+    local currentRaceName = getCurrentRaceNameOnly()
+    local currentRaceFull = CheckCurrentRaceFull()
+
+    print("Race hiện tại: " .. currentRaceFull)
+
+    return normalizeText(currentRaceName) == normalizeText(Config.TargetRace), currentRaceFull
+end
+
+local function doReroll()
+    pcall(function()
+        CommF:InvokeServer("BlackbeardReward", "Reroll", "1")
+    end)
+    task.wait(0.2)
+    pcall(function()
+        CommF:InvokeServer("BlackbeardReward", "Reroll", "2")
+    end)
+end
+
+local function StartAutoRoll()
+    print("--- Bắt đầu Auto Roll Race ---")
+
+    while task.wait(Config.Delay) do
+        local matched, currentRaceFull = isTargetRace()
+        if matched then
+            print("=> Đã ra đúng tộc " .. Config.TargetRace .. " (" .. currentRaceFull .. "). Dừng script.")
+            break
+        end
+
+        print("=> Chưa đúng tộc " .. Config.TargetRace .. ". Đang roll lại...")
+        doReroll()
+
+        task.wait(1.5)
+
+        matched, currentRaceFull = isTargetRace()
+        if matched then
+            print("=> Roll xong đã ra đúng tộc " .. Config.TargetRace .. " (" .. currentRaceFull .. "). Dừng script.")
+            break
+        end
+    end
+end
+
+StartAutoRoll()
