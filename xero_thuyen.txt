@@ -1,13 +1,32 @@
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer:FindFirstChild("DataLoaded")
-getgenv().modechange = getgenv().modechange or {
-    ['Key'] = 'VIP-970B-8140-8ACE', -- key script cua m dau
-    ['CDK'] = true,
-    ['Torch Tushita'] = "Fast", -- Slow(tween)
-    ['MM'] = true,
-    ['SGT'] = true,
-    ['HopDarkBeard'] = true,
-    ['Boost FPS'] = false,
-    ['Black Screen'] = false,
-    ['FPS'] = 60
+script_key = "7lXwrl7AbD93nVdnD2PxvXDjW5I5sx" -- Thay bằng key của bạn
+getgenv().mode = "1" -- 1 for normal pc or emu 2 for linux user
+Config = {
+    Team = "Pirates",
+    FPS = 10,
+    Configuration = {
+        HopWhenIdle = false,
+        HopNear = false,
+        FpsBoost = false,
+        blackscreen = false,
+        FastAttackMode = "Both"
+    },
+    Fruit ={
+        Sniper = true,
+        Fruit = {"Kitsune-Kitsune"},
+        EatFruitStore = false
+    },
+    Items = {
+        -- Melees 
+        AutoFullyMelees = true,
+
+       
+        Saber = false,
+        
+
+
+    },
+    Settings = {
+        StayInSea2UntilHaveDarkFragments = false
+    }
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hihiae/36var/refs/heads/main/djtconmemay.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hhl29042008-ops/a/refs/heads/main/sex"))()
